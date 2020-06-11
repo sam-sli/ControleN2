@@ -1,0 +1,37 @@
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<div class="upcoming py-5">
+    <div class="container">
+    <div class="row pb-4 text-center">
+        <div class="col-md-12">
+            <h2>Panier<span class="badge badge-secondary"></span> </h2>
+            
+        </div>
+    </div>
+	<div class="row text-center">
+		<div class="col-md-3 box border py-4"  *ngFor="let item of cars">
+		    <div class="box-carimage">
+                <img [src]="item.image" alt="" srcset="" />
+            </div>
+            
+
+            <br>
+            <br>
+		    <div class="box-cartitle">
+                {{ item.N_immatriculation }}
+		       
+		    </div>
+		   
+		 
+            <br>
+            <br>
+            <button 
+            (click)="goToCarDetails(item)" class="btn btn-outline-danger">Check Price</button>
+        </div>
+        
+		
+	
+	</div>
+
+</div>
+</div>
